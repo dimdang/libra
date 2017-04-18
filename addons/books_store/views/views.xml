@@ -1,0 +1,59 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="books_store.list">
+      <field name="name"> books store list</field>
+      <field name="model">books_store.books_store</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="books_store.action_window">
+      <field name="name"> books store window</field>
+      <field name="res_model">books_store.books_store</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="books_store.action_server">
+      <field name="name"> books store server</field>
+      <field name="model_id" ref="model_books_store_books_store"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name=" books store" id="books_store.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="books_store.menu_1" parent="books_store.menu_root"/>
+    <menuitem name="Menu 2" id="books_store.menu_2" parent="books_store.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="books_store.menu_1_list" parent="books_store.menu_1"
+              action="books_store.action_window"/>
+    <menuitem name="Server to list" id="books_store" parent="books_store.menu_2"
+              action="books_store.action_server"/>
+    -->
+  </data>
+</openerp>

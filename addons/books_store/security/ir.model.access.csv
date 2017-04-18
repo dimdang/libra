@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_books_store_books_store,books_store.books_store,model_books_store_books_store,,1,0,0,0
